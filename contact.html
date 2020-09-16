@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hotel Paradise Contact</title>
+    
+</head>
+<body>
+    <header>
+        <nav id = "navbar">
+            <div class = "container">
+                <h1 class = "logo"><a href="index.html">HPARADISE</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class = "current" href="contact.html">Contact</a></li>
+                    <li><a href="deal.html">Deals</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id = "contact-form" class = "py-1">
+        <div class = "container">
+            <h1 class = "l-heading"><span class = "text-primary">Contact</span> Us</h1>
+            <p class = "main">Please fill out the form below to contact us</p>
+            <div id ="error_message"></div>
+            <form action="/contact.html" name="my_form" onsubmit="return validate()">
+                <div class = "form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name = "name" id = "name" placeholder="Type Name">
+                </div>
+                <div class = "form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name = "email" id = "email" placeholder="Type Email e.g abc@gmail.com">
+                </div>
+                <div class = "form-group">
+                    <label for="message">Messages</label>
+                    <textarea name="message" id = "message" placeholder="Type Messages"></textarea>
+                </div>
+                <button type = "submit" class = "btn">Submit</button>
+
+            </form>
+
+        </div>
+
+    </section>
+    <!-- Section Bottom -->
+    <section id = "contact-info">
+        <div class="box bg-dark">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>location</h3>
+            <p>Baneshwor, Kathmandu</p>
+        </div>
+        <div class="box bg-dark">
+            <i class="fas fa-phone fa-3x"></i>
+            <h3>Phone Number</h3>
+            <p>+977 1234341812</p>
+        </div>
+        <div class="box bg-dark">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h3>Email</h3>
+            <p>frontdesk@hotelParadise.co</p>
+        </div>
+    </section>
+
+    <div class="clr"></div>
+    <footer id = "main-footer">
+        <p>Hotel Paradise &copy; 2020, All Rights Reserved</p>
+
+    </footer>
+    <script src = "validate.js"></script>
+    
+
+</body>
+</html>
